@@ -15,8 +15,11 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {};
-  const handleChange = () => {};
+  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const {name,value}=e.target;
+    setForm({...form,[name]:value})
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -57,10 +60,10 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows="7"
-              name="name"
+              name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you wanna say to me?"
+              placeholder="Anything you'd like me to know?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             ></textarea>
           </label>
