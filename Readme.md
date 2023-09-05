@@ -2,7 +2,7 @@
 
 Welcome to my work-in-progress Three.js portfolio website! This project showcases my skills in 3D graphics and web development.
 
-![Screenshot of My Portfolio Website](screenshot.png)
+![Screenshot of My Portfolio Website](public/portofolio-home.png)
 
 ## Table of Contents
 
