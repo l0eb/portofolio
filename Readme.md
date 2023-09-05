@@ -23,9 +23,9 @@ Here, you can explore some of the exciting projects I've worked on. Each project
 
 Feel free to get in touch with me if you have any questions, feedback, or opportunities for collaboration:
 
-- Email: [priyank-khobragade@proton.me](mailto:priyank-khobragade@proton.me)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/priyank-khobragade/)
-- Twitter: [Your Twitter Profile](https://twitter.com/loeb___)
+- [priyank-khobragade@proton.me](mailto:priyank-khobragade@proton.me)
+- [Linkedin](https://www.linkedin.com/in/priyank-khobragade/)
+- [Twitter](https://twitter.com/loeb___)
 
 ---
 
