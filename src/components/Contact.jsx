@@ -1,10 +1,9 @@
-import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+import { useRef, useState } from "react";
 import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
+import { EarthCanvas } from "./canvas";
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,7 +14,17 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {};
+  
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    fetch('http://localhost:3001/api/test',{
+      method:'POST',
+      body: JSON.stringify({form}),
+      headers:{
+        'Content-type' : 'application/json; charset=UTF-8'
+      }
+    })
+  };
   const handleChange = (e) => {
     const {name,value}=e.target;
     setForm({...form,[name]:value})
