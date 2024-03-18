@@ -23,8 +23,10 @@ import {
     jobit,
     tripguide,
     threejs,
+    summarizer
   } from "../assets";
   import edgeforce from '../assets/company/edgeforce.png'
+  
   export const navLinks = [
     {
       id: "about",
@@ -198,30 +200,30 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI Webpage / Article Summarizer - Sumz",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Simplify your reading with AI Summarizer, an open source article summarizer that transforms lengthy articles into short clear and concise digestible paragraphs using GPT-3.5",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "AI",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: summarizer,
+      source_code_link: "https://github.com/l0eb",
     },
     {
-      name: "Job IT",
+      name: "CBM - T72 & T90",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "condition-based monitoring system to proactively predict engine component failures using real-time sensor data. Engineered front-end and back-end components, integrating with Flask for seamless data flow and user interface interaction",
       tags: [
         {
           name: "react",
@@ -237,19 +239,19 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/l0eb",
     },
     {
-      name: "Trip Guide",
+      name: "Unmanned Ground Vehicle - V2",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An Autonomous Vehicle that can navigate accordingly to it's environment avoiding obstacles. Worked on Obstacle Detection and Avoidance Framework and sensor integration with A* pathfinding",
       tags: [
         {
-          name: "nextjs",
+          name: "ros",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "deep learning",
           color: "green-text-gradient",
         },
         {
@@ -258,7 +260,7 @@ import {
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/l0eb",
     },
   ];
   

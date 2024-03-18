@@ -5,8 +5,6 @@ const { cloneUniformsGroups } = require('three')
 const router = express.Router()
 const sql = require('sqlite3').verbose()
 
-
-
 let db = new sql.Database('/mnt/c/Users/mrloe/Callers.db')
 
 router.post('/test',(req,res)=>{
