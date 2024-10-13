@@ -8,6 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 errors.md
 Todo.md
+'C:\Users\mrloe\Callers.db'
+test.txt
 
 node_modules
 dist
@@ -24,4 +26,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.db
 ubuntu@ec2-65-1-131-216.ap-south-1.compute.amazonaws.com
