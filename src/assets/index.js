@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import summarizer from './myProjects/summarizer.png'
+import imagnify from "./imagnify.png"
+import ugv from "./UGV57.png"
 
 export {
   logo,
@@ -60,5 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
-  summarizer
+  summarizer,
+  imagnify,
+  ugv
 };

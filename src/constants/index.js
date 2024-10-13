@@ -23,7 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
-    summarizer
+    summarizer,
+    imagnify,
+    ugv
   } from "../assets";
   import edgeforce from '../assets/company/edgeforce.png'
   
@@ -57,8 +59,7 @@ import {
     },
     {
       title: "Data scientist",
-      icon: creator,
-    },
+      icon: creator, },
   ];
   
   const technologies = [
@@ -182,24 +183,24 @@ import {
       source_code_link: "https://github.com/l0eb",
     },
     {
-      name: "CBM - T72 & T90",
+      name: "Next-Imaginify",
       description:
-        "condition-based monitoring system to proactively predict engine component failures using real-time sensor data. Engineered front-end and back-end components, integrating with Flask for seamless data flow and user interface interaction",
+        "Create and Edit either your own or generated images made by our AI, try different filters, make editing easy by simply prompting, upscale Images with ease with the help of prompts and AI, no longer do you need to learn photoshop to let your imagination run wild",
       tags: [
         {
-          name: "react",
+          name: "Next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "AI",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: imagnify,
       source_code_link: "https://github.com/l0eb",
     },
     {
@@ -208,7 +209,7 @@ import {
         "An Autonomous Vehicle that can navigate accordingly to it's environment avoiding obstacles. Worked on Obstacle Detection and Avoidance Framework and sensor integration with A* pathfinding",
       tags: [
         {
-          name: "ros",
+          name: "APIs",
           color: "blue-text-gradient",
         },
         {
@@ -216,11 +217,11 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "ROS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: ugv,
       source_code_link: "https://github.com/l0eb",
     },
   ];
