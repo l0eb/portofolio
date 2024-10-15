@@ -14,7 +14,7 @@ Welcome to my work-in-progress Three.js portfolio website! This project showcase
 
 This portfolio website is designed to display my projects, skills, and achievements in a visually appealing 3D environment created using the Three.js library. It serves as a showcase of my work as a developer and 3D artist.
 
-## Works
+## Work
 
 Here, you can explore some of the exciting projects I've worked on. Each project is a unique combination of creativity and technical expertise.
 

@@ -23,7 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
-    summarizer
+    summarizer,
+    imagnify,
+    ugv
   } from "../assets";
   import edgeforce from '../assets/company/edgeforce.png'
   
@@ -57,8 +59,7 @@ import {
     },
     {
       title: "Data scientist",
-      icon: creator,
-    },
+      icon: creator, },
   ];
   
   const technologies = [
@@ -117,45 +118,6 @@ import {
   ];
   
   const experiences = [
-    // {
-    //   title: "React.js Developer",
-    //   company_name: "Starbucks",
-    //   icon: starbucks,
-    //   iconBg: "#383E56",
-    //   date: "March 2020 - April 2021",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "React Native Developer",
-    //   company_name: "Tesla",
-    //   icon: tesla,
-    //   iconBg: "#E6DEDD",
-    //   date: "Jan 2021 - Feb 2022",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
-    // {
-    //   title: "Web Developer",
-    //   company_name: "Shopify",
-    //   icon: shopify,
-    //   iconBg: "#383E56",
-    //   date: "Jan 2022 - Jan 2023",
-    //   points: [
-    //     "Developing and maintaining web applications using React.js and other related technologies.",
-    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //     "Implementing responsive design and ensuring cross-browser compatibility.",
-    //     "Participating in code reviews and providing constructive feedback to other developers.",
-    //   ],
-    // },
     {
       title: "Full stack Developer",
       company_name: "Edgeforce Solutions",
@@ -174,27 +136,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I thought it was impossible to make a website as beautiful as our product, but Priyank proved me wrong.",
+      name: "Rouf Syed",
+      designation: "SDE-II",
+      company: "Pine Labs",
+      image: "https://randomuser.me/api/portraits/lego/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "I've never met a developer who truly cares about their clients' success like Priyank does.",
+      name: "Steve Jobs",
       designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      company: "Apple Inc.",
+      image: "https://randomuser.me/api/portraits/lego/1.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "After Priyank optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      name: "Elon Musk",
+      designation: "CEO",
+      company: "Tesla",
+      image: "https://randomuser.me/api/portraits/lego/7.jpg",
     },
   ];
   
@@ -221,24 +183,24 @@ import {
       source_code_link: "https://github.com/l0eb",
     },
     {
-      name: "CBM - T72 & T90",
+      name: "Next-Imaginify",
       description:
-        "condition-based monitoring system to proactively predict engine component failures using real-time sensor data. Engineered front-end and back-end components, integrating with Flask for seamless data flow and user interface interaction",
+        "Create and Edit either your own or generated images made by our AI, try different filters, make editing easy by simply prompting, upscale Images with ease with the help of prompts and AI, no longer do you need to learn photoshop to let your imagination run wild",
       tags: [
         {
-          name: "react",
+          name: "Next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "AI",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: imagnify,
       source_code_link: "https://github.com/l0eb",
     },
     {
@@ -247,7 +209,7 @@ import {
         "An Autonomous Vehicle that can navigate accordingly to it's environment avoiding obstacles. Worked on Obstacle Detection and Avoidance Framework and sensor integration with A* pathfinding",
       tags: [
         {
-          name: "ros",
+          name: "APIs",
           color: "blue-text-gradient",
         },
         {
@@ -255,11 +217,11 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "ROS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: ugv,
       source_code_link: "https://github.com/l0eb",
     },
   ];
