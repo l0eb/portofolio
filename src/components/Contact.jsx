@@ -4,6 +4,8 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 import { EarthCanvas } from "./canvas";
+import emailjs from 'emailjs-com'
+import env from 'react-dotenv';
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,14 +18,21 @@ const Contact = () => {
 
   
   const handleSubmit = (e) => {
-    e.preventDefault()
-    fetch('http://localhost:3001/api/test',{
-      method:'POST',
-      body: JSON.stringify({form}),
-      headers:{
-        'Content-type' : 'application/json; charset=UTF-8'
-      }
-    })
+    //send email when this funciton runs
+    e.preventDefault();
+
+    setLoading(true)
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID,formRef.current,import.meta.env.VITE_USER_ID)
+    .then((result)=>{
+        alert('Email Sent Successfully')
+        console.log(result.text)
+        setLoading(false)
+        setForm({name:"",email:"",message:""})
+      },(error)=>{
+          alert('failed to send mail, Service must be down because its not free')
+          console.log(error.text)
+          setLoading(false);
+        })
   };
   const handleChange = (e) => {
     const {name,value}=e.target;

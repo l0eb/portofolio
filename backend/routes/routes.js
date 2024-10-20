@@ -4,6 +4,9 @@ const fs = require('fs')
 const { cloneUniformsGroups } = require('three')
 const router = express.Router()
 const sql = require('sqlite3').verbose()
+// import {test} from '../actions/actions'
+// import * as lib from '../actions/actions'
+const test = require('../actions/actions')
 
 let db = new sql.Database('/mnt/c/Users/mrloe/Callers.db')
 
@@ -14,7 +17,6 @@ router.post('/test',(req,res)=>{
     const formattedName = data.name 
     const formattedEmail = data.email 
     const sdata = "New Message Recieved from : \n" + formattedName + "\nThe Message is From : " + formattedEmail + "\nTheir Message says : " + formattedMessage
-    
     // sdata = JSON.stringify(sdata)
     const filepath = './test.txt'
     const formatted =  `\n${sdata}\n`
@@ -25,7 +27,6 @@ router.post('/test',(req,res)=>{
         }
         else{
             console.log('data written')
-            
         }
     })
 
@@ -39,5 +40,7 @@ router.post('/test',(req,res)=>{
     res.status(200).json({status:"success", message:"data inserted successfyullty"})
 
 })
+
+router.post('/action',(req,res)=>{test(req,res)})
 
 module.exports=router

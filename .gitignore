@@ -10,8 +10,11 @@ errors.md
 Todo.md
 'C:\Users\mrloe\Callers.db'
 test.txt
-
+threevanilla
+.env
+Scene.js
 node_modules
+backend
 dist
 dist-ssr
 *.local
