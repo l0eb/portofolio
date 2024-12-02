@@ -5,7 +5,6 @@ import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 import { EarthCanvas } from "./canvas";
 import emailjs from 'emailjs-com'
-import env from 'react-dotenv';
 
 const Contact = () => {
   const formRef = useRef();
@@ -20,12 +19,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     //send email when this funciton runs
     e.preventDefault();
-
     setLoading(true)
-    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID,formRef.current,import.meta.env.VITE_USER_ID)
+    emailjs.sendForm(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      formRef.current,
+      import.meta.env.VITE_USER_ID
+    )
     .then((result)=>{
         alert('Email Sent Successfully')
-        console.log(result.text)
+        // console.log(result.text)
         setLoading(false)
         setForm({name:"",email:"",message:""})
       },(error)=>{
