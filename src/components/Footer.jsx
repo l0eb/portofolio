@@ -87,13 +87,13 @@ const FooterContent = () => {
                 type="email"
                 name="email"
                 placeholder="Enter email address"
-                className="bg-gray-700 text-white rounded-md px-4 py-2 mt-2 focus:outline-none"
+                className="bg-gray-700 text-white rounded-md px-4 py-2 mt-2 focus:outline-hidden"
               />
               <input
                 type="submit"
                 onChange={()=>setEmail(event.target.value)}
                 value="Send"
-                className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 mt-2 focus:outline-none"
+                className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 mt-2 focus:outline-hidden"
               />
             </form>
           </div>
