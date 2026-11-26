@@ -7184,4 +7184,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/scene.gltf");
+useGLTF.preload("/desktop_pc/scene.gltf");
