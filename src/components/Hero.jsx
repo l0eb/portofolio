@@ -2,15 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Desktop from "./canvas/SceneDesktopNew";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen h-[100svh] mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 sm:top-[120px] top-[96px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -23,14 +20,14 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100 z-20`}>
             A Full Stack Developer and <br className="sm:block hidden" />a Tech
             Enthusiast who loves
-            <br className="sm:block hidden" /> building things that live on the
+            <br className="sm:block hidden" /> building things that live on the{" "}
             <br className="sm:block hidden" />
             web
           </p>
         </div>
       </div>
       <ComputersCanvas />
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute sm:bottom-10 bottom-6 w-full [@media(max-height:700px)]:hidden flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 ">
             <motion.div

@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="sm:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-full green-pink-gradient p-px rounded-[20px] shadow-card"
@@ -19,10 +19,10 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] sm:py-5 py-6 sm:px-12 px-3 sm:min-h-[280px] min-h-[160px] gap-3 flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <img src={icon} alt={title} className="sm:w-16 sm:h-16 w-12 h-12 object-contain" />
+          <h3 className="text-white sm:text-[20px] text-[15px] font-bold text-center">
             {" "}
             {title}{" "}
           </h3>
@@ -43,14 +43,14 @@ const About = () => {
       <motion.p
         variants={fadeIn(",", 0.1, 1)}
         className="mt-4 text-white
-        text-[17px] max-w-3xl leading-[30px]"
+        sm:text-[17px] text-[15px] max-w-3xl sm:leading-[30px] leading-[26px]"
       >
         I'm a skilled software developer with experience in JavaScript and
         python, and expertise in frameworks like React, Node.js, and collaborate
         closely with clients to create efficient, scalable, and user-friendly
         solutions that solve real-world problems
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="sm:mt-20 mt-10 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

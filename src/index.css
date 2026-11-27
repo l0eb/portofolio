@@ -23,13 +23,21 @@ layer(base);
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
-  color-scheme: dark;
+/* Kept in the base layer so Tailwind v4 utilities (padding, margin) can override it. */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    overflow-x: clip;
+  }
 }
 
 .hash-span {
