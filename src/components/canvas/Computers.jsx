@@ -25,9 +25,9 @@ const Computers = ({ isMobile }) => {
       />
       <Desktop
         classname="z-10"
-        position={isMobile ? [0, -3, -2.2] : [0, -5, -1.5]}
+        position={isMobile ? [0, -4.2, -1.6] : [0, -5, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
-        scale={isMobile ? 0.7 : 0.75}
+        scale={isMobile ? 0.6 : 0.75}
       />
     </mesh>
   );

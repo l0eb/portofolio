@@ -33,7 +33,7 @@ const FooterContent = () => {
   return (
     <div className="text-white py-6">
       <div className="container mx-auto">
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row sm:justify-between gap-2">
           <div className="mb-6">
             <h5 className="mb-2.5 font-bold uppercase text-gray-300">
               Priyank Khobragade
@@ -82,18 +82,18 @@ const FooterContent = () => {
               Stay Updated
             </h5>
 
-            <form>
+            <form className="flex sm:flex-col gap-2 w-full sm:w-auto">
               <input
                 type="email"
                 name="email"
                 placeholder="Enter email address"
-                className="bg-gray-700 text-white rounded-md px-4 py-2 mt-2 focus:outline-hidden"
+                className="bg-gray-700 text-white rounded-md px-4 py-2 sm:mt-2 flex-1 min-w-0 focus:outline-hidden"
               />
               <input
                 type="submit"
                 onChange={()=>setEmail(event.target.value)}
                 value="Send"
-                className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 mt-2 focus:outline-hidden"
+                className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 sm:mt-2 focus:outline-hidden"
               />
             </form>
           </div>
